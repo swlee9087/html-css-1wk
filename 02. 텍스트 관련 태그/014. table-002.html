@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들기</title>
+    <!-- CSS 요소 -->
+    <style>
+        th {
+            padding:15px; /* 셀 테두리와 내용 사이의 간격(패딩) */
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <!-- colgroup 열을 묶는 태그 -->
+        <!-- 열을 묶어서 별도의 스타일 지정 -->
+        <colgroup>
+            <!-- col 각 열 선택 태그 -->
+            <!-- col태그는 테이블의 열의 개수와 동일하게 생성해야 된다. -->
+            <col style="width:100px;">
+            <col style="width:300px;">
+            <col style="width:100px;">
+            <col style="width:300px;">
+        </colgroup>
+        <tr>
+            <th>이름</th>
+            <td></td>
+            <th>연락처</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <!-- colspan 가로 셀 합치기 -->
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+</body>
+</html>
