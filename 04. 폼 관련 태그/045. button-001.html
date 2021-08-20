@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 버튼</title>
+</head>
+<body>
+    <script>
+        function fnalert() {
+            alert("HTML5");
+        }
+    </script>
+    <form>
+        <!-- type="button" 기능없는 버튼 생성 -->
+        <!-- onclick이벤트를 등록하여 기능을 추가 -->
+        <input type="button" value="새 탭 열기" onclick="window.open()">
+        <button type="button" onclick="window.open()"><img src="images/login.jpg"></button>
+        <!-- javascript 사용자 정의 메소드와 onclick 이벤트 매핑 -->
+        <input type="button" value="alert창 띄우기" onclick="fnalert();">
+    </form>
+</body>
+</html>

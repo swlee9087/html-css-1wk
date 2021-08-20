@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fieldset & legend</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 20px;
+        }
+        li label{
+            width: 80px;
+            float:left;
+        }
+        fieldset{
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <ul>
+                <li><label for="name">Name</label><input type="text" id="name"></li>
+                <li><label for="mail">Email</label><input type="text" id="mail"></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Login Information</legend>
+                <ul>
+                    <li><label for="id">ID</label><input type="text" id="id"></li>
+                    <li><label for="pw">PW</label><input type="text" id="pw"></li>
+                </ul>            
+        </fieldset>
+    </form>
+</body>
+</html>

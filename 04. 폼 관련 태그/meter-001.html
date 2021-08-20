@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#face9d; 
+        }
+        ul li{
+            list-style: none;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <label>Occupied 0.8</label>
+            <meter value="0.8"></meter>
+        </li>
+        <li>
+            <label>Usage 64%</label>
+            <meter min="0" max="100" value="64"></meter>
+        </li>
+        <li>
+            <label>Traffic Exceeded</label>
+            <meter value="9216" min="1024" max="10240" low="2048" high="8192"></meter>
+        </li>
+        <li>
+            <label>Optimum Traffic</label>
+            <meter value="0.5" low="0.2" high="0.8" optimum="0.5"></meter>
+        </li>
+    </ul>
+</body>
+</html>

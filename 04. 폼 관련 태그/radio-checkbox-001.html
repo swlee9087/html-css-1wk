@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form</title>
+    <style>
+        body{
+            background-color: cornsilk;
+        }
+        form fieldset{
+            margin-bottom: 25px;
+        }
+        form legend{
+            font-size: 15px;
+            font-weight: 600;
+        }
+        form label.reg{
+            font-size: 14px;
+            color: #390;
+            font-weight: bold;
+            width: 110px;
+            float: left;
+            text-align: right;
+            margin-right: 10px;
+        }
+        form ul li{
+            list-style: none;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        #member, #stuff{
+            width: 50px;
+        }
+        #pre{
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Register Courses</legend>
+                <p>Select a course to register for this month.</p>
+                <label><input type="radio" name="subject" value="speaking">Speaking</label>
+                <label><input type="radio" name="subject" value="grammer">Grammer</label>
+                <label><input type="radio" name="subject" value="writing">Writing</label>
+        </fieldset>
+        <fieldset>
+            <legend>Subcription</legend>
+                <p>Select news topics to subscribe.</p>
+                <label><input type="checkbox" name="mailing1" value="news">News</label>
+                <label><input type="checkbox" name="mailing2" value="dialog">5 Minute Dialogues</label>
+                <label><input type="checkbox" name="mailing3" value="pops">Pop Music</label>
+        </fieldset>
+    </form>
+</body>
+</html>

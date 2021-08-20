@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04/quiz-2</title>
+    <style>        
+        body{width: 500px; border: 1px solid black; padding: 20px; margin:auto;}
+        fieldset {margin-bottom:15px;}
+        legend {font-weight:bold;}
+        ul {list-style-type: none;}
+        li {line-height:30px;}
+</style>
+</head>
+<body>
+    <fieldset>
+    <h1>프런트엔드 개발자 지원서</h1>
+    <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+    <hr>
+    <form>        
+        
+            <h4>개인 정보</h4>
+            <ul>
+                <li>
+                    <label for="sname">이름</label><input type="text" id="sname" autofocus placeholder="공백 없이 입력하세요">
+                </li>
+                <li>
+                    <label for="snumber">연락처</label><input type="text" id="snumber">
+                </li>
+            </ul>
+            <h4>지원 분야</h4>
+            <ul>
+                <li><label><input type="radio" name="field" value="wpub"> Web Publishing</label></li>
+                <li><label><input type="radio" name="field" value="wapp"> Web Application Developer</label></li>
+                <li><label><input type="radio" name="field" value="devenv"> 개발환경 개선</label></li>
+            </ul>
+            <h4>지원 동기</h4>
+            <label>
+                <textarea cols="60" rows="5" placeholder="본사 지원 동기를 간략히 써 주세요"></textarea>
+            </label>
+            <input type="submit" value="접수">
+            <input type="reset" value="다시쓰기">        
+    </form>
+    </fieldset>
+</body>
+</html>

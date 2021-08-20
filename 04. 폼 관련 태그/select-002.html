@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #fff;
+        }
+        form fieldset{
+            margin-bottom: 25px;
+        }
+        form legend{
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .reg{
+            font-size: 14px;
+            width: 110px;
+            color:#390;
+            font-weight: bold;
+            float: left;
+            text-align: right;
+            margin-right: 10px;
+        }
+        form ul li{
+            list-style: none;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register for Summer Courses</h1>
+    <form>        
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <ul>
+                <li><label class="reg" for="uname">Name </label>
+                <input type="text" id="uname"></li>
+                <li><label class="reg" for="uid">Student Number </label>                
+                <input type="text" id="uid" autofocus></li>
+                <li><label class="reg" for="uclass">Course Major</label>
+                    <select size="5" id="uclass" multiple>
+                        <option value="archi">Architecture</option>
+                        <option value="mecha">Mechanical Engineering</option>
+                        <option value="indust">Industrial Engineering</option>
+                        <option value="elec">Electrical Engineering</option>
+                        <option value="comp" selected>Computer Engineering</option>
+                        <option value="chem">Chemical Engineering</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+</body>
+</html>

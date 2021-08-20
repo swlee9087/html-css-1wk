@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome New Member!</h1>
+    <form>
+        <ul>
+            <li>
+                <label>
+                    ID : <input type="text" id="user_id" size="10" minlength="4" maxlength="15">
+                </label>
+                <small><small><small style="color:red;">4~15 characters including alphabets & numbers
+                </small></small></small>
+            </li>
+            <li>
+                <label>
+                    Email : <input type="email" id="user_email">
+                </label></li>
+            <li>
+                <label>
+                    Password : <input type="password" id="user_pw">
+                </label></li>
+            <li>
+                <label>
+                    Check Password : <input type="password" id="chk_pw">
+                </label></li>
+            <li>
+                <input type="submit" value="Register as Member">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

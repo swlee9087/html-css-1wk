@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>label tag</title>
+    <style>
+        ul{
+            list-style-type: none;
+        }
+        li{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3>Course Areas (multiple)</h3>
+        <ul>
+            <li><input type="checkbox" value="grm">Grammar</li>
+            <li><input type="checkbox" value="wr">Writing</li>
+            <li><input type="checkbox" value="rd">Reading</li>
+        </ul>
+        <h3>Course Selection (single)</h3>
+        <ul>
+            <li><label><input type="radio" name="subject" value="en">English</label></li>
+            <li><label><input type="radio" name="subject" value="ch">Chinese</label></li>
+            <li><label><input type="radio" name="subject" value="jp">Japanese</label></li>
+        </ul>
+    </form>
+</body>
+</html>

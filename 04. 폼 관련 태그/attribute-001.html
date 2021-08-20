@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #fff;
+        }
+        form fieldset{
+            margin-bottom: 25px;
+        }
+        form legend{
+            font-size: 15px;
+            font-weight: 600;
+        }
+        form lable.reg{
+            font-size: 14px;
+            width: 110px;
+            color:#390;
+            font-weight: left;
+            text-align: right;
+            margin-right: 10px;
+        }
+        form ul li{
+            list-style: none;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+        #member,#stuff{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Register for Summer Courses</h1>
+    <form action="">
+        <fieldset>
+            <legend>Available Courses</legend>
+            <ul>
+                <li><label class="reg" for="subj">English (Beginner Level)</label>
+                    <input type="text" id="subj" value="AM 9:00~11:00" readonly>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <ul>
+                <li><label class="reg" for="uname">Name </label>
+                <input type="text" id="uname" autofocus required></li>
+                <li><label class="reg" for="uid">Student Number </label>                
+                <input type="text" id="uid" placeholder="type without hyphen" maxlength="8" required></li>
+                <li><label class="reg" for="uclass">Course Major</label>
+                    <select id="uclass">
+                        <option value="archi">Architecture</option>
+                        <option value="mecha">Mechanical Engineering</option>
+                        <option value="indust">Industrial Engineering</option>
+                        <option value="elec">Electrical Engineering</option>
+                        <option value="comp">Computer Engineering</option>
+                        <option value="chem">Chemical Engineering</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Order Textbooks</legend>
+            <ul>
+                <li><label class="reg" for="book">Textbooks</label>
+                    <input type="number" id="book" value="1" min="1" max="3">
+                </li>
+                <li><label class="reg" for="wsht">Worksheets</label>
+                    <input type="number" id="wsht" value="1" min="1" max="3">
+                </li>
+                <li><label class="reg" for="group">Group Orders</label>
+                    <input type="number" id="group" value="10" min="10" max="100" step="10">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <button type="submit" value="submit">Submit Registration</button>
+            <button type="reset" value="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
